@@ -4,8 +4,8 @@ GPIO.setmode(GPIO.BCM)
 pwmPin = 16
 GPIO.setup(pwmPin, GPIO.OUT)
 
-dcMin = 25
-dcMax = 40
+dcMin = 45
+dcMax = 100
 pwm = GPIO.PWM(pwmPin, 50) # PWM object at 50 Hz (20 ms period)
 pwm.start(0)
 try:
